@@ -1,0 +1,13 @@
+PROJECT="ORTS"/pdata/Berlin_DE
+POLYGON="Berlin/Berlin"
+STREETS="Berlin_streets/Berlin_streets"
+POP="Berlin_ls_points/Berlin_ls_points"
+OUTPUT=${GISDATAHOME}/ORTS/pdata/Berlin_DE/inputs
+#TYPE 1 : shortest path 2: quickest route
+TYPE=2
+PROGRAM=`pwd`
+PROG=$(basename ${PROGRAM})
+echo ${GISBINROOT}/${OSTYPE}/$PROG ${PROJECT} ${POLYGON} ${STREETS} ${POP} ${OUTPUT} ${TYPE}
+${GISBINROOT}/${OSTYPE}/$PROG ${PROJECT} ${POLYGON} ${STREETS} ${POP} ${OUTPUT} ${TYPE}
+
+
