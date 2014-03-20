@@ -23,6 +23,6 @@ OBJECTS = ${SOURCES:.cpp=.o}
 #CXXFLAGS += -DDEBUG_GLOBAL
 CXXFLAGS += -DFUNCTION_TRACE
 
-include ../../../makefiles/common.mk
-include ../../../makefiles/Makefile.mk
+include ~/gis/src/makefiles/common.mk
+include ~/gis/src/makefiles/Makefile.mk
 
